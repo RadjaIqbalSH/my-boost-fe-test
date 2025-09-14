@@ -28,11 +28,11 @@ export const Form = (props: IFormProps) => {
     event.preventDefault();
     setValidateStatus(true);
 
-    const elements = Array.from(
+    const inputElements = Array.from(
       event.currentTarget.elements
     ) as HTMLInputElement[];
 
-    const hasError = elements.some(
+    const hasError = inputElements.some(
       ({ dataset }) => dataset?.required === "true" && !dataset?.value?.length
     );
 
@@ -41,17 +41,16 @@ export const Form = (props: IFormProps) => {
       return false;
     }
 
-    const formData = elements.reduce<Record<string, string | undefined>>(
-      (accumulator, { name, dataset }) => {
-        if (name) accumulator[name] = dataset?.value;
-        return accumulator;
-      },
-      {}
-    );
+    const remapDataForm = inputElements.reduce<
+      Record<string, string | undefined>
+    >((accumulator, { name, dataset }) => {
+      if (name) accumulator[name] = dataset?.value;
+      return accumulator;
+    }, {});
 
-    onFinish?.(formData);
+    onFinish?.(remapDataForm);
     setValidateStatus(false);
-    return formData;
+    return remapDataForm;
   };
 
   return (

@@ -43,11 +43,13 @@ export const Wizard = (props: IWizardProps) => {
       </div>
       <div className="h-full">{children}</div>
       <div className="flex items-center justify-between">
+        {/* Back button */}
         {step > 1 && (
           <Button onClick={() => onChangeStep(step - 1)} disabled={loading}>
             <ArrowLeftIcon className="mr-2" /> Back
           </Button>
         )}
+        {/* Submit button */}
         {step === steps.length ? (
           <Button
             type="submit"
@@ -58,6 +60,7 @@ export const Wizard = (props: IWizardProps) => {
             Submit
           </Button>
         ) : (
+          // Next button
           <Button
             className="ml-auto"
             onClick={() => onChangeStep(step + 1)}
