@@ -21,8 +21,8 @@ export const FieldTextArea = (props: IFieldTextAreaProps) => {
     required,
     errorMsg,
     validation,
-    validateStatus,
     defaultValue,
+    validateStatus,
     ...restProps
   } = props;
 

@@ -2,6 +2,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { v4 as uuidv4 } from "uuid";
 
+import { RESPONSE_MSG_API } from "@/consts/responseMessageAPI";
 import { responseApiWrapper } from "@/helpers/responseApiWrapper";
 import { IDBBlog } from "@/interfaces/database";
 import { IResponseApi } from "@/interfaces/responseApi";
@@ -16,11 +17,13 @@ export default async function handler(
   const { method, body } = req;
 
   if (method === "GET") {
-    return res
-      .status(200)
-      .json(
-        responseApiWrapper({ code: 200, msg: "success", data: db.data.blogs })
-      );
+    return res.status(200).json(
+      responseApiWrapper({
+        code: 200,
+        msg: RESPONSE_MSG_API[200],
+        data: db.data.blogs,
+      })
+    );
   }
 
   if (method === "POST") {
@@ -32,14 +35,18 @@ export default async function handler(
     db.data.blogs.push(newBlog);
     await db.write();
 
-    return res
-      .status(201)
-      .json(responseApiWrapper({ code: 201, msg: "success", data: newBlog }));
+    return res.status(201).json(
+      responseApiWrapper({
+        code: 201,
+        msg: RESPONSE_MSG_API[201],
+        data: newBlog,
+      })
+    );
   }
 
   return res
     .status(405)
     .json(
-      responseApiWrapper({ code: 405, msg: "Method not allowed", data: null })
+      responseApiWrapper({ code: 405, msg: RESPONSE_MSG_API[405], data: null })
     );
 }

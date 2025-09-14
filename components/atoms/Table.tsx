@@ -1,16 +1,22 @@
+import classNames from "classnames";
 import React from "react";
 
 export interface ITableProps {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  data: { [key: string]: any };
+  data: { [key: string]: string };
+  className?: string;
 }
 
 export const Table = (props: ITableProps) => {
   // props
-  const { data } = props;
+  const { data, className } = props;
 
   return (
-    <div className="grid w-full grid-cols-[200px_1fr] gap-4">
+    <div
+      className={classNames(
+        "grid w-full grid-cols-[200px_1fr] gap-4",
+        className
+      )}
+    >
       {Object.entries(data).map(([key, value]) => (
         <React.Fragment key={key}>
           <div className="font-geist-mono border border-gray-600 bg-blue-100/50 p-2 font-semibold">

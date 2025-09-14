@@ -9,8 +9,8 @@ export interface ISelectProps extends SelectHTMLAttributes<HTMLSelectElement> {
 export const Select = (props: ISelectProps) => {
   // props
   const {
-    error = false,
     options = [],
+    error = false,
     className = "",
     disabled = false,
     ...restProps

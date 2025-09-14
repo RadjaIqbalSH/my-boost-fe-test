@@ -19,10 +19,10 @@ export const FieldInput = (props: IFieldInputProps) => {
     id,
     label,
     required,
-    validation,
     errorMsg,
-    validateStatus,
+    validation,
     defaultValue,
+    validateStatus,
     ...restProps
   } = props;
 

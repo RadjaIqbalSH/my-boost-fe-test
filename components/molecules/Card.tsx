@@ -9,10 +9,10 @@ import { Tag } from "../atoms/Tag";
 
 export interface ICardProps {
   url: string;
+  date: number;
   title: string;
   author: string;
   summary: string;
-  date: number;
   category: string;
 }
 

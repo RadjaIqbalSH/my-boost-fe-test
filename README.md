@@ -1,20 +1,20 @@
 # 🚀 My Boost FE Test
 
 A **Next.js 15** project using **Turbopack**, styled with **Tailwind CSS 4**, and powered by modern libraries like **Zod**, and **LowDB**.  
-This project is intended for testing and demonstrating frontend development skills.  
+This project is intended for testing and demonstrating frontend development skills.
 
 ---
 
 ## 📦 Tech Stack
 
-- **[Next.js 15](https://nextjs.org/)** – React framework with Turbopack  
-- **[React 19](https://react.dev/)** – Latest React features  
-- **[Tailwind CSS 4](https://tailwindcss.com/)** – Utility-first CSS  
-- **[Zod](https://zod.dev/)** – Schema validation  
-- **[LowDB](https://github.com/typicode/lowdb)** – Local JSON database  
-- **[@radix-ui/react-icons](https://www.radix-ui.com/icons)** – Accessible SVG icons  
-- **UUID** – Unique ID generator  
-- **ESLint + Prettier** – Code linting & formatting  
+- **[Next.js 15](https://nextjs.org/)** – React framework with Turbopack
+- **[React 19](https://react.dev/)** – Latest React features
+- **[Tailwind CSS 4](https://tailwindcss.com/)** – Utility-first CSS
+- **[Zod](https://zod.dev/)** – Schema validation
+- **[LowDB](https://github.com/typicode/lowdb)** – Local JSON database
+- **[@radix-ui/react-icons](https://www.radix-ui.com/icons)** – Accessible SVG icons
+- **UUID** – Unique ID generator
+- **ESLint + Prettier** – Code linting & formatting
 
 ---
 
@@ -45,11 +45,11 @@ App will be running at [http://localhost:3000](http://localhost:3000).
 
 ## 📜 Available Scripts
 
-- `yarn dev` – Start development server with Turbopack  
-- `yarn build` – Build the app for production  
-- `yarn start` – Start production server  
-- `yarn lint` – Run ESLint  
-- `yarn format` – Format code with Prettier  
+- `yarn dev` – Start development server with Turbopack
+- `yarn build` – Build the app for production
+- `yarn start` – Start production server
+- `yarn lint` – Run ESLint
+- `yarn format` – Format code with Prettier
 
 ---
 
@@ -89,8 +89,8 @@ my-boost-fe-test/
 
 ## 🚧 Requirements
 
-- **Node.js >= 18**  
-- **Yarn >= 1.22** (Classic) or **Berry**  
+- **Node.js >= 18**
+- **Yarn >= 1.22** (Classic) or **Berry**
 
 ---
 
@@ -98,8 +98,8 @@ my-boost-fe-test/
 
 This project uses:
 
-- **ESLint** with `next`, `prettier`, and `simple-import-sort`  
-- **Prettier** with `tailwindcss` plugin for automatic class sorting  
+- **ESLint** with `next`, `prettier`, and `simple-import-sort`
+- **Prettier** with `tailwindcss` plugin for automatic class sorting
 
 Format code with:
 
@@ -111,4 +111,4 @@ yarn format
 
 ## 📄 License
 
-This project is private and for testing purposes only.  
+This project is private and for testing purposes only.

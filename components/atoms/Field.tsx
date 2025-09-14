@@ -7,14 +7,22 @@ export interface IFieldProps {
   errorMsg?: string;
   required?: boolean;
   children?: ReactNode;
+  className?: string;
 }
 
 export const Field = (props: IFieldProps) => {
   // props
-  const { id, label, children, required = false, errorMsg = "" } = props;
+  const {
+    id,
+    label,
+    children,
+    className,
+    errorMsg = "",
+    required = false,
+  } = props;
 
   return (
-    <div className="flex flex-col">
+    <div className={classNames("flex flex-col", className)}>
       <label
         className={classNames("font-geist-mono mb-2 text-sm", {
           "text-red-600": !!errorMsg,

@@ -21,8 +21,8 @@ export const FieldSelect = (props: IFieldSelectProps) => {
     required,
     errorMsg,
     validation,
-    validateStatus,
     defaultValue,
+    validateStatus,
     ...restProps
   } = props;
 
