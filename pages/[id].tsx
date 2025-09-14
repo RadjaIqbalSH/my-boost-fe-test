@@ -2,8 +2,8 @@ import { GetStaticPaths, GetStaticProps } from "next";
 
 import { BlogDetail } from "@/components/templates/BlogDetail";
 import { Layout } from "@/components/templates/Layout";
-import { IDBBlog } from "@/typings/interfaces/database";
-import { IResponseApi } from "@/typings/interfaces/responseApi";
+import { IDBBlog } from "@/interfaces/database";
+import { IResponseApi } from "@/interfaces/responseApi";
 import { fetcher } from "@/utils/fetcher";
 
 interface IBlogDetailPageProps {

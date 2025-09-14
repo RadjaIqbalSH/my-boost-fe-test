@@ -1,40 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 🚀 My Boost FE Test
 
-## Getting Started
+A **Next.js 15** project using **Turbopack**, styled with **Tailwind CSS 4**, and powered by modern libraries like **Zustand**, **Zod**, and **LowDB**.  
+This project is intended for testing and demonstrating frontend development skills.  
 
-First, run the development server:
+---
+
+## 📦 Tech Stack
+
+- **[Next.js 15](https://nextjs.org/)** – React framework with Turbopack  
+- **[React 19](https://react.dev/)** – Latest React features  
+- **[Tailwind CSS 4](https://tailwindcss.com/)** – Utility-first CSS  
+- **[Zustand](https://github.com/pmndrs/zustand)** – State management  
+- **[Zod](https://zod.dev/)** – Schema validation  
+- **[LowDB](https://github.com/typicode/lowdb)** – Local JSON database  
+- **[@radix-ui/react-icons](https://www.radix-ui.com/icons)** – Accessible SVG icons  
+- **UUID** – Unique ID generator  
+- **ESLint + Prettier** – Code linting & formatting  
+
+---
+
+## ⚙️ Getting Started
+
+### 1. Clone repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/your-username/my-boost-fe-test.git
+cd my-boost-fe-test
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install dependencies
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```bash
+yarn install
+```
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### 3. Run development server
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+```bash
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+App will be running at [http://localhost:3000](http://localhost:3000).
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📜 Available Scripts
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+- `yarn dev` – Start development server with Turbopack  
+- `yarn build` – Build the app for production  
+- `yarn start` – Start production server  
+- `yarn lint` – Run ESLint  
+- `yarn format` – Format code with Prettier  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🛠️ Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+my-boost-fe-test/
+├── .vscode/          # VSCode editor settings (launch.json, settings.json, etc.)
+├── components/       # Reusable React components (UI elements, layout, widgets)
+├── consts/           # Project-wide constants (routes, config values, enums)
+├── helpers/          # Small utility/helper functions
+├── hooks/            # Custom React hooks (e.g., useAuth, useFetch)
+├── pages/            # Next.js pages (file-based routing)
+│   ├── api/          # Next.js API routes (serverless functions)
+│   └── index.tsx     # Main entry page
+├── styles/           # Global styles (CSS, SCSS, Tailwind configs, etc.)
+├── interfaces/       # TypeScript interfaces & types (e.g., User, Product)
+├── utils/            # Application-level utilities (larger than helpers)
+├── public/           # Static assets (images, fonts, icons, etc.)
+│   └── favicon.ico   # Default favicon
+├── .env              # Environment variables
+├── .gitignore        # Git ignore rules
+├── .prettierignore   # Prettier ignore rules
+├── .prettierrc.json  # Prettier configuration
+├── db.json           # Mock database (e.g., for json-server)
+├── eslint.config.mjs # ESLint configuration
+├── next-env.d.ts     # Next.js type definitions
+├── next.config.ts    # Next.js configuration file
+├── package.json      # Project metadata, dependencies, and scripts
+├── postcss.config.mjs# PostCSS configuration (usually for Tailwind)
+├── README.md         # Project documentation
+├── tsconfig.json     # TypeScript configuration
+└── yarn.lock         # Yarn lock file for dependency consistency
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+---
+
+## 🚧 Requirements
+
+- **Node.js >= 18**  
+- **Yarn >= 1.22** (Classic) or **Berry**  
+
+---
+
+## 🧹 Code Quality
+
+This project uses:
+
+- **ESLint** with `next`, `prettier`, and `simple-import-sort`  
+- **Prettier** with `tailwindcss` plugin for automatic class sorting  
+
+Format code with:
+
+```bash
+yarn format
+```
+
+---
+
+## 📄 License
+
+This project is private and for testing purposes only.  

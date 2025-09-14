@@ -2,8 +2,8 @@ import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 
 import { useToast } from "@/hooks/useToast";
-import { IDBBlog } from "@/typings/interfaces/database";
-import { IResponseApi } from "@/typings/interfaces/responseApi";
+import { IDBBlog } from "@/interfaces/database";
+import { IResponseApi } from "@/interfaces/responseApi";
 import { fetcher } from "@/utils/fetcher";
 
 import { Button } from "../atoms/Button";

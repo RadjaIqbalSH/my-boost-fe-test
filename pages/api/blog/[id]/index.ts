@@ -2,8 +2,8 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
 import { responseApiWrapper } from "@/helpers/responseApiWrapper";
-import type { IDBBlog } from "@/typings/interfaces/database";
-import { IResponseApi } from "@/typings/interfaces/responseApi";
+import type { IDBBlog } from "@/interfaces/database";
+import { IResponseApi } from "@/interfaces/responseApi";
 import { initDB } from "@/utils/db";
 
 export default async function handler(

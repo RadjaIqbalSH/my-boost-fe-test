@@ -1,7 +1,7 @@
 import React from "react";
 
 import { dateFormat } from "@/helpers/dateFormat";
-import { IDBBlog } from "@/typings/interfaces/database";
+import { IDBBlog } from "@/interfaces/database";
 
 import { Tag } from "../atoms/Tag";
 

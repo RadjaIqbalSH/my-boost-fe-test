@@ -1,4 +1,4 @@
-import { IResponseApi } from "@/typings/interfaces/responseApi";
+import { IResponseApi } from "@/interfaces/responseApi";
 
 export interface IResponseApiWrapper<T> {
   code: number;

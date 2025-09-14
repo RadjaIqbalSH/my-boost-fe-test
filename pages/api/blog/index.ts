@@ -3,8 +3,8 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import { v4 as uuidv4 } from "uuid";
 
 import { responseApiWrapper } from "@/helpers/responseApiWrapper";
-import { IDBBlog } from "@/typings/interfaces/database";
-import { IResponseApi } from "@/typings/interfaces/responseApi";
+import { IDBBlog } from "@/interfaces/database";
+import { IResponseApi } from "@/interfaces/responseApi";
 import { initDB } from "@/utils/db";
 
 export default async function handler(

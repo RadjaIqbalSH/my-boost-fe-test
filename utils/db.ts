@@ -2,7 +2,7 @@ import { Low } from "lowdb";
 import { JSONFile } from "lowdb/node";
 import path from "path";
 
-import { IDBData } from "@/typings/interfaces/database";
+import { IDBData } from "@/interfaces/database";
 
 const file = path.join(process.cwd(), "db.json");
 const adapter = new JSONFile<IDBData>(file);

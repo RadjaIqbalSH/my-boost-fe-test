@@ -9,7 +9,7 @@ import {
 } from "@/consts/createBlog";
 import { useToast } from "@/hooks/useToast";
 import { IBlogData } from "@/interfaces/blogData";
-import { IResponseApi } from "@/typings/interfaces/responseApi";
+import { IResponseApi } from "@/interfaces/responseApi";
 import { fetcher } from "@/utils/fetcher";
 
 import { Table } from "../atoms/Table";
