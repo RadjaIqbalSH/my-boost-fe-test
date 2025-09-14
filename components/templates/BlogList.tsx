@@ -49,19 +49,26 @@ export const BlogList = () => {
       <Button className="mb-8 ml-auto" onClick={() => router.push("/create")}>
         Create Blog
       </Button>
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {blogs.map((blog) => (
-          <Card
-            title={blog.title}
-            author={blog.author_name}
-            category={blog.category}
-            summary={blog.summary}
-            date={blog.created_at}
-            key={blog.id}
-            url={`/${blog.id}`}
-          />
-        ))}
-      </div>
+
+      {blogs.length ? (
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {blogs.map((blog) => (
+            <Card
+              title={blog.title}
+              author={blog.author_name}
+              category={blog.category}
+              summary={blog.summary}
+              date={blog.created_at}
+              key={blog.id}
+              url={`/${blog.id}`}
+            />
+          ))}
+        </div>
+      ) : (
+        <p className="mx-auto mt-20 w-fit text-xl font-semibold text-gray-500">
+          No Data
+        </p>
+      )}
     </div>
   );
 };
