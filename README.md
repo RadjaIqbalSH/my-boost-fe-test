@@ -1,6 +1,6 @@
 # 🚀 My Boost FE Test
 
-A **Next.js 15** project using **Turbopack**, styled with **Tailwind CSS 4**, and powered by modern libraries like **Zustand**, **Zod**, and **LowDB**.  
+A **Next.js 15** project using **Turbopack**, styled with **Tailwind CSS 4**, and powered by modern libraries like **Zod**, and **LowDB**.  
 This project is intended for testing and demonstrating frontend development skills.  
 
 ---
@@ -10,7 +10,6 @@ This project is intended for testing and demonstrating frontend development skil
 - **[Next.js 15](https://nextjs.org/)** – React framework with Turbopack  
 - **[React 19](https://react.dev/)** – Latest React features  
 - **[Tailwind CSS 4](https://tailwindcss.com/)** – Utility-first CSS  
-- **[Zustand](https://github.com/pmndrs/zustand)** – State management  
 - **[Zod](https://zod.dev/)** – Schema validation  
 - **[LowDB](https://github.com/typicode/lowdb)** – Local JSON database  
 - **[@radix-ui/react-icons](https://www.radix-ui.com/icons)** – Accessible SVG icons  
