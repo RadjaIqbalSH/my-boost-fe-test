@@ -45,7 +45,7 @@ export const Wizard = (props: IWizardProps) => {
       <div className="flex items-center justify-between">
         {step > 1 && (
           <Button onClick={() => onChangeStep(step - 1)} disabled={loading}>
-            <ArrowLeftIcon className="mr-2" /> Previous
+            <ArrowLeftIcon className="mr-2" /> Back
           </Button>
         )}
         {step === steps.length ? (
